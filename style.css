@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    @font-face {
+        font-family: 'Daydream';
+        src: url('/Fonts/Daydream.ttf') format('ttf')
+    }
+  @font-face {
+    font-family: 'Monument';
+    src: url('/Fonts/MonumentExtended-Ultrabold.otf') format('otf')
+  }
+  @font-face {
+    font-family: 'MyriadPro';
+    src: url('/Fonts/MyriadPro-Regular.otf') format('otf')
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    background: #203D77;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    font-family: Montserrat;
+    transition: background-color 0.3s ease;
+    
+}
+/*NAVIGATION SETTINGS*/
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav img{
+  width: 300px;
+  height: auto;
+}
+nav a {
+    width: 250px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+
+}
+nav a#NavLink:hover,
+nav a#NavLink.active {
+    border-top: 10px solid #ED3A95 ;
+
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FFFFFF;
+    color: #203D77;
+    font-weight: 700;
+}
+nav a#NavPlayButton{
+    padding: 35px 0px 0px 0px;
+}
+nav a#NavPlayButton button{
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border: 1px solid #ED3A95;
+    border-radius: 20px;
+    width: 130px;
+    color:#ED3A95;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+nav a#NavPlayButton button:hover{
+    background-color: #ED3A95;
+    color: white;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+/*NAVIGATION SETTINGS*/
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+
+}
+.side{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+}
+.side img#sidecookie{
+    position: relative;
+    top: 310px;
+    max-width: 100%;
+    width: 110px;
+    height: fit-content;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes rotateZoom {
+    0% {
+        transform: rotate(0deg) scale(1); /* Start with no rotation and original size */
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5); /* Scale up to 1.5 at 50% of the animation */
+    }
+    100% {
+        transform: rotate(360deg) scale(1); /* Return to original size at the end of the animation */
+    }
+}
+@keyframes rotateZoomRev {
+    0% {
+        transform: rotate(0deg) scale(1); /* Start with no rotation and original size */
+    }
+    50% {
+        transform: rotate(-180deg) scale(1.5); /* Scale up to 1.5 at 50% of the animation */
+    }
+    100% {
+        transform: rotate(-360deg) scale(1); /* Return to original size at the end of the animation */
+    }
+}
+.side img#particle1{
+    position: absolute;
+    top: 330px;
+    animation: rotate 4s linear infinite;
+}
+.side img#particle2{
+    position: absolute;
+    left: 380px;
+    top: 320px;
+    animation: rotate 8s linear infinite;
+}
+.side img#particle3{
+    position: absolute;
+    left: 360px;
+    top: 310px;
+    animation: rotate 6s linear infinite;
+}
+.side img#particle4{
+    position: absolute;
+    left: 395px;
+    top: 310px;
+    animation: rotate 9s linear infinite;
+}
+/*LINE PART*/
+.side img#particle5{
+    position: absolute;
+    left: 335px;
+    top: 490px;
+    animation: rotateZoom 8s linear infinite;
+}
+.side img#particle6{
+    position: absolute;
+    left: 400px;
+    top: 650px;
+    animation: rotateZoomRev 15s linear infinite;
+}
+.side img#particle7{
+    position: absolute;
+    left: 250px;
+    top: 950px;
+    animation: rotateZoom 10s linear infinite;
+}
+.side img#particle8{
+    position: absolute;
+    left:500px;
+    top: 1300px;
+    animation: rotate 10s linear infinite;
+}
+.side img#particle9{
+    position: absolute;
+    left:650px;
+    top: 1400px;
+    animation: rotate 15s linear infinite;
+}
+.side img#particle10{
+    position: absolute;
+    left:335px;
+    top: 1650px;
+    animation: rotateZoom 15s linear infinite;
+}
+.side img#particle11{
+    position: absolute;
+    left:650px;
+    top: 1800px;
+    animation: rotate 8s linear infinite;
+}
+.side img#particle12{
+    position: absolute;
+    left:500px;
+    top: 2000px;
+    animation: rotateZoomRev 20s linear infinite;
+}
+.side img#particle13{
+    position: absolute;
+    left:800px;
+    top: 2280px;
+    animation: rotateZoom 10s linear infinite;
+}
+.side img#particle14{
+    position: absolute;
+    left:500px;
+    top: 2400px;
+    animation: rotateZoomRev 10s linear infinite;
+}
+
+/*CONTENT PAGE 1 SETTINGS*/
+section#home{
+
+}
+.content1-left{
+    width: 50%;
+}
+.content1-left h1{
+    font-family: 'Monument';
+    font-size: 3em;
+    padding: 20px 20px 20px 20px;
+}
+.content1-left h4{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    padding: 20px 20px 20px 20px;
+}
+.content1-right{
+    max-width: 100%;
+}
+.content1-right img#page1img{
+    max-width: 100%;
+}
+
+section#about{
+
+}
+.content2-left{
+    width: 100%;
+}
+.content2-left h1{
+    font-family: 'Monument';
+    font-size: 3em;
+    padding: 20px 20px 20px 20px;
+}
+.content2-left h4{
+    font-family: 'Montserrat';
+    width: 50%;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 20px 20px 20px 20px;
+}
+.content2-right{
+    width: 500px;
+    max-width: 100%;
+}
+
+section#wmc{
+
+}
+.content3-left{
+    width: 100%;
+}
+.content3-left img{
+    padding: 20px;
+}
+.content3-left h4{
+    width: 50%;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 20px 20px 20px 20px;
+}
+.content3-left h4 i{
+    font-weight: 800;
+}
+.content3-left a{
+    padding: 20px;
+}
+button#PlayNow{
+    padding: 15px 10px 15px 10px;
+    width: 200px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: white;
+    background-color: #ED3A95;
+    border: none;
+    cursor: pointer;
+}
+button#PlayNow:hover{
+    background-color: #8d1654;
+    transition: 0.2s;
+}
+
+/*COLORS
+Dark Blue: #203D77
+White: #FFFFFF
+Magenta: #ED3A95
+Dark Magenta: #E11988
+*/
